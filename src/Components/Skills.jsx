@@ -86,7 +86,7 @@ function Skills() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-gray-300 text-lg max-w-2xl mx-auto font-playwrite my-6"
+          className="text-gray-300 text-lg max-w-2xl mx-auto  my-6"
         >
           A comprehensive overview of my technical expertise
         </motion.p>
@@ -116,7 +116,7 @@ function Skills() {
               <div className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm mb-4 group-hover:shadow-lg group-hover:shadow-cyan-500/20 transition-all duration-300">
                 {skill.icon}
               </div>
-              <h3 className="text-2xl font-bold text-white font-playwrite mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-2xl font-bold text-white  mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
                 {skill.category}
               </h3>
             </motion.div>
@@ -130,7 +130,7 @@ function Skills() {
                 <motion.span
                   key={itemIndex}
                   whileHover={{ scale: 1.05 }}
-                  className="px-3 py-1 rounded-full text-md font-playwrite bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
+                  className="px-3 py-1 rounded-full text-md  bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
                 >
                   {item}
                 </motion.span>

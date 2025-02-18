@@ -71,7 +71,7 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <p className="text-center font-playwrite text-gray-300 text-xl py-16">
+              <p className="text-center text-gray-300 text-xl py-16">
                 {"Thank you for your message! I'll get back to you shortly!"}
               </p>
             </motion.div>
@@ -133,7 +133,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full py-4 px-6 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-xl rounded-lg font-bold text-white font-playwrite mb-2 text-center text-white  transition-all duration-200 shadow-lg hover:shadow-cyan-500/25"
+                className="w-full py-4 px-6 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-xl rounded-lg font-bold text-white  mb-2 text-center text-white  transition-all duration-200 shadow-lg hover:shadow-cyan-500/25"
               >
                 Send Message
               </motion.button>

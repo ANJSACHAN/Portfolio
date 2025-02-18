@@ -169,7 +169,7 @@ function App() {
             <Contact />
           </div>
         </div>
-        <div className="pt-10">
+        <div className="pt-5">
           <InfiniteScrollComponent
             a="React"
             b="Java"
