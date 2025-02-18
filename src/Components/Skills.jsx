@@ -38,7 +38,7 @@ const skills = [
   {
     category: "Competitive Programming",
     icon: <Brain className="w-8 h-8 mb-4 text-cyan-400" />,
-    items: ["LeetCode (300+ problems solved)", "Problem-Solving"],
+    items: ["LeetCode", "Codeforces","Problem-Solving"],
     description: "Enhancing algorithmic thinking and coding efficiency",
   },
 ];
@@ -130,7 +130,7 @@ function Skills() {
                 <motion.span
                   key={itemIndex}
                   whileHover={{ scale: 1.05 }}
-                  className="px-3 py-1 rounded-full text-lg font-playwrite bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
+                  className="px-3 py-1 rounded-full text-md font-playwrite bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
                 >
                   {item}
                 </motion.span>

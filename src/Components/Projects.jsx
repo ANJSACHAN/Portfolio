@@ -1,31 +1,34 @@
 import PropTypes from 'prop-types';
 import { ExternalLink, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import uiWidgetsImage from '../assets/library.png';
+import legalEase from "../assets/legalease.png"
 const projects = [
+ 
+  {
+    title: "ui-widgets-kit",
+    description: "Developed a customizable React UI component library with Alert, FilterComponent, TextInput, Button, Select, DateTime Picker, and more. Implemented a custom Webpack configuration for optimized bundling and efficient module resolution. The library offers a wide range of customizable components and ensures strong TypeScript support for type safety and an enhanced developer experience.",
+    technologies: "TypeScript, React, Tailwind CSS",
+    imageUrl: uiWidgetsImage,
+    projectUrl: "https://www.npmjs.com/package/ui-widgets-kit",
+    githubUrl: "https://github.com/ANJSACHAN/ts-utils"
+},
+
+{
+  title: "ReactSphere",
+  description: "Developed a React-inspired library to gain a deeper understanding of core React principles, with a focus on the internal workings. Rewrote the reconciliation algorithm to simulate component renders and optimize DOM updates, while also providing support for functional components. Built with TypeScript for type safety and compiled using Babel for cross-browser compatibility.",
+  technologies: "TypeScript, Babel",
+  imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2940",
+  projectUrl: "https://github.com/ANJSACHAN/ReactSphere",
+  githubUrl: "https://github.com/ANJSACHAN/ReactSphere"
+},
   {
     title: 'LegalEase Website',
     description: 'Developed a groundbreaking e-marketplace to revolutionize the legal service industry in India by providing a centralized platform for advocates, arbitrators, mediators, notaries, and document writers to extend their services to citizens.',
     technologies: 'MERN Stack',
-    imageUrl: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=2942',
-    projectUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'ui-widgets-kit',
-    description: 'Built a customizable React UI component library with Alert, FilterComponent, TextInput, Button, Select, Date Time Picker, and more. Implemented a custom Webpack configuration for optimized bundling and efficient module resolution.',
-    technologies: 'TypeScript, React, Tailwind CSS',
-    imageUrl: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2940',
-    projectUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'ReactSphere',
-    description: 'Developed a React-inspired library with a custom reconciliation algorithm for efficient DOM updates. Built with TypeScript for type safety and compiled using Babel for cross-browser support.',
-    technologies: 'TypeScript, Babel',
-    imageUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=2940',
-    projectUrl: '#',
-    githubUrl: '#',
+    imageUrl: legalEase,
+    projectUrl: 'https://legalease.onrender.com/',
+    githubUrl: 'https://github.com/ANJSACHAN/LegalEase',
   },
 ];
 

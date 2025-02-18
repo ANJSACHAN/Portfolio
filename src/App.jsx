@@ -8,8 +8,23 @@ import Projects from "./Components/Projects";
 import LandingPage from "./Components/LandingPage";
 import SplashCursor from "./Components/SplashCursor";
 import Navbar from "./Components/Navbar";
-
+import Mediology from "./assets/mediology.png";
+import SIH from "./assets/grp_sih.png";
+import ML from "./assets/ml.png";
+import SIH_Certificate from "./assets/sih.png"
+import BlockChain from "./assets/blockchain.png"
+import Coding from "./assets/coding.png"
 function App() {
+
+  const items = [
+  
+    { image: Mediology, text: 'SDE Intern at Mediology' },
+    { image: SIH_Certificate, text: 'SIH Certificate' },
+    { image: BlockChain, text: 'Participated in Blockchain Event' },
+    { image: Coding, text: 'Participated in coding Events' },
+    { image: ML, text: 'Machine Learning Certificate' },
+    { image: SIH, text: 'Smart India Hackathon' },
+  ]
   const [pageHeight, setPageHeight] = useState(window.innerHeight);
 
   useEffect(() => {
@@ -132,7 +147,7 @@ function App() {
           Achievements & Activities 
         </h2>
         <div style={{ height: "600px", position: "relative" }}>
-          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
+          <CircularGallery items={items}  bend={3} textColor="#ffffff" borderRadius={0.05} />
         </div>
         <InfiniteScrollComponent
            a="React"

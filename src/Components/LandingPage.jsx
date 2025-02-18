@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, CodeSquare } from "lucide-react";
+
 const roles = [
   {
     title: "MERN Stack Developer",
@@ -118,6 +119,7 @@ const LandingPage = () => {
           {[
             { icon: Github, href: "https://github.com/ANJSACHAN" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/anjalisachan/" },
+            { icon: CodeSquare, href: "https://leetcode.com/u/Anjali_Sachan_/" },
           ].map((social, i) => (
             <motion.a
               key={i}
@@ -132,6 +134,7 @@ const LandingPage = () => {
         </div>
       </div>
      
+  
  
     
  
