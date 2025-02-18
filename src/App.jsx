@@ -33,7 +33,7 @@ function App() {
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <Navbar />
       <SplashCursor />
-      {/* Animated Background Circles */}
+
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(10)].map((_, i) => {
           const startX = Math.random() * 100;
@@ -62,52 +62,80 @@ function App() {
         })}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 via-blue-900/20 to-purple-900/20 animate-gradient-x" />
-
-      <section  className="min-h-screen">
-      <LandingPage />
-     
-      </section>
-      <section id="skills" className="min-h-screen">
-        <Skills />
-        <InfiniteScrollComponent
-          a="Hackathons"
-          b="Coding"
-          c="Contests"
-          d="Projects"
-          e="Development"
-          f="Lectures"
-          g="Nptel"
-          h="Interviews"
-          i="Tests"
-          j="Skills"
-        />
-      </section>
-
-      <section id="projects" className="min-h-screen">
-        <Projects />
-        <InfiniteScrollComponent
-          a="Hackathons"
-          b="Coding"
-          c="Contests"
-          d="Projects"
-          e="Development"
-          f="Lectures"
-          g="Nptel"
-          h="Interviews"
-          i="Tests"
-          j="Skills"
-        />
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-900/15 via-blue-900/20 to-purple-900/15 animate-gradient-x" />
+      <section className="min-h-screen flex flex-col">
+        <div className="flex-grow flex items-center justify-center">
+          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <LandingPage />
+          </div>
+        </div>
+        <div>
+          <InfiniteScrollComponent
+            a="Hackathons"
+            b="Coding"
+            c="Contests"
+            d="Projects"
+            e="Development"
+            f="Lectures"
+            g="Nptel"
+            h="Interviews"
+            i="Tests"
+            j="Skills"
+          />
+        </div>
       </section>
 
-      <section id="gallery" className="min-h-screen">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
+      <section id="skills" className="min-h-screen flex flex-col">
+        <div className="flex-grow flex items-center justify-center">
+          <div className="relative z-10  mx-auto px-4 text-center">
+            <Skills />
+          </div>
+        </div>
+        <div>
+          <InfiniteScrollComponent
+            a="Hackathons"
+            b="Coding"
+            c="Contests"
+            d="Projects"
+            e="Development"
+            f="Lectures"
+            g="Nptel"
+            h="Interviews"
+            i="Tests"
+            j="Skills"
+          />
+        </div>
+      </section>
+
+      <section id="projects" className="min-h-screen flex flex-col">
+        <div className="flex-grow flex items-center justify-center">
+          <div className="relative z-10  mx-auto px-4 text-center">
+            <Projects />
+          </div>
+        </div>
+        <div>
+          <InfiniteScrollComponent
+            a="Hackathons"
+            b="Coding"
+            c="Contests"
+            d="Projects"
+            e="Development"
+            f="Lectures"
+            g="Nptel"
+            h="Interviews"
+            i="Tests"
+            j="Skills"
+          />
+        </div>
+      </section>
+
+      <section id="gallery" className="min-h-screen flex flex-col py-16">
+        <h2 className="text-4xl font-bold text-center text-white ">
           Achievements & Activities
         </h2>
-      <div style={{ height: '600px', position: 'relative' }}>
-   
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
-</div>
+        <div style={{ height: "600px", position: "relative" }}>
+          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
+        </div>
         <InfiniteScrollComponent
           a="Hackathons"
           b="Coding"
@@ -122,8 +150,26 @@ function App() {
         />
       </section>
 
-      <section id="contact" className="min-h-screen">
-        <Contact />
+      <section id="contact" className="min-h-screen flex flex-col">
+        <div className="items-center justify-center">
+          <div className="">
+            <Contact />
+          </div>
+        </div>
+        <div className="pt-10">
+          <InfiniteScrollComponent
+            a="Hackathons"
+            b="Coding"
+            c="Contests"
+            d="Projects"
+            e="Development"
+            f="Lectures"
+            g="Nptel"
+            h="Interviews"
+            i="Tests"
+            j="Skills"
+          />
+        </div>
       </section>
     </div>
   );

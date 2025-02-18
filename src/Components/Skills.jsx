@@ -66,7 +66,7 @@ const itemVariants = {
 
 function Skills() {
   return (
-    <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 py-16" >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

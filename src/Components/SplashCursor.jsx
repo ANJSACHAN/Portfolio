@@ -7,15 +7,15 @@ function SplashCursor({
   DYE_RESOLUTION = 1440,
   CAPTURE_RESOLUTION = 512,
   DENSITY_DISSIPATION = 15,
-  VELOCITY_DISSIPATION = 3,
+  VELOCITY_DISSIPATION = 2,
   PRESSURE = 0.1,
   PRESSURE_ITERATIONS = 20,
   CURL = 3,
-  SPLAT_RADIUS = 0.04,
+  SPLAT_RADIUS = 0.02,
   SPLAT_FORCE = 1000,
   SHADING = true,
   COLOR_UPDATE_SPEED = 10,
-  BACK_COLOR = { r: 0.5, g: 0, b: 0 },
+  BACK_COLOR = { r: 0.5, g: 0, b: 0.9 },
   TRANSPARENT = true,
 }) {
   const canvasRef = useRef(null);
@@ -1027,13 +1027,23 @@ function SplashCursor({
     }
 
     function generateColor() {
-        return {
-            r: 0.65 + Math.random() * 0.2, // High values for white tinge
-            g: 0.75 + Math.random() * 0.2, // High values for white tinge
-            b: 0.85 + Math.random() * 0.15 // Highest blue component
-          };
+    
+      const minPurple = { r: 0.5, g: 0, b: 0.9 }; 
+      const maxBlue = { r: 0, g: 0, b: 0.9 };
+      const minCyan = { r: 0, g: 1, b: 1 }; 
+      
+      const r = Math.random() * (minPurple.r + minCyan.r);  
+      const g = Math.random() * (minCyan.g + maxBlue.g);    
+      const b = Math.random() * (minPurple.b + minCyan.b);  
+    
+      
+      const lightenFactor = 0.4;  
+      const lightR = r + (1 - r) * lightenFactor;
+      const lightG = g + (1 - g) * lightenFactor;
+      const lightB = b + (1 - b) * lightenFactor;
+    
+      return { r: lightR, g: lightG, b: lightB };
     }
-
    
 
     function wrap(value, min, max) {

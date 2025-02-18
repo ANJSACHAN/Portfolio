@@ -68,8 +68,8 @@ const LandingPage = () => {
   const currentRole = roles[index]; // Guaranteed to be valid now
 
   return (
-    <>
-    <div className="min-h-screen flex items-center justify-center ">
+ 
+  
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -134,9 +134,9 @@ const LandingPage = () => {
         </div>
       </div>
      
-    </div>
+ 
     
-    </>
+ 
   );
 };
 

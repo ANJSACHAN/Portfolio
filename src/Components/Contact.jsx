@@ -36,7 +36,7 @@ const Contact = () => {
   }, [formSubmitted]);
 
   return (
-    <div className="relative z-10 container mx-auto px-4 py-16">
+    <div className="relative z-10 container mx-auto px-4 py-">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
