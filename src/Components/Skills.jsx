@@ -46,12 +46,13 @@ const skills = [
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
-    opacity: 1,
+    opacity: 1, // Fixed opacity
     transition: {
       staggerChildren: 0.1,
     },
   },
 };
+
 
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
@@ -66,7 +67,7 @@ const itemVariants = {
 
 function Skills() {
   return (
-    <div className="relative z-10 max-w-7xl mx-auto px-4 py-16" >
+    <div className="relative z-10 max-w-7xl mx-auto px-4 py-10" >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -77,7 +78,7 @@ function Skills() {
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl mb-6 font-pacifico text-white"
+          className="text-5xl font-extrabold text-white tracking-wide"
         >
           My Skills
         </motion.h2>
@@ -85,7 +86,7 @@ function Skills() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-gray-300 text-lg max-w-2xl mx-auto font-satisfy"
+          className="text-gray-300 text-lg max-w-2xl mx-auto font-playwrite my-6"
         >
           A comprehensive overview of my technical expertise
         </motion.p>
@@ -95,7 +96,7 @@ function Skills() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
       >
         {skills.map((skill, index) => (
           <motion.div
@@ -106,7 +107,7 @@ function Skills() {
               y: -5,
               transition: { duration: 0.2 },
             }}
-            className="group bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300"
+            className="group border-2 border-gray-800 bg-gray-900/50 backdrop-blur-md rounded-xl p-6 shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300"
           >
             <motion.div
               className="flex flex-col items-center mb-4"
@@ -115,7 +116,7 @@ function Skills() {
               <div className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm mb-4 group-hover:shadow-lg group-hover:shadow-cyan-500/20 transition-all duration-300">
                 {skill.icon}
               </div>
-              <h3 className="text-2xl font-satisfy mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-2xl font-playwrite mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
                 {skill.category}
               </h3>
             </motion.div>

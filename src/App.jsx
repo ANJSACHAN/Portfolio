@@ -6,9 +6,7 @@ import CircularGallery from "./Components/CircularGallery";
 import InfiniteScrollComponent from "./Components/InfiniteScrollComponent";
 import Projects from "./Components/Projects";
 import LandingPage from "./Components/LandingPage";
-
 import SplashCursor from "./Components/SplashCursor";
-
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -63,7 +61,7 @@ function App() {
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-r from-purple-900/15 via-blue-900/20 to-purple-900/15 animate-gradient-x" />
-      <section className="min-h-screen flex flex-col">
+      <section id="landingpage" className="min-h-screen flex flex-col">
         <div className="flex-grow flex items-center justify-center">
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <LandingPage />
@@ -71,16 +69,16 @@ function App() {
         </div>
         <div>
           <InfiniteScrollComponent
-            a="Hackathons"
-            b="Coding"
-            c="Contests"
-            d="Projects"
+            a="React"
+            b="Java"
+            c="Typescript"
+            d="Javascript"
             e="Development"
-            f="Lectures"
+            f="Coding"
             g="Nptel"
-            h="Interviews"
-            i="Tests"
-            j="Skills"
+            h="SDE Intern"
+            i="MERN"
+            j="Linux"
           />
         </div>
       </section>
@@ -93,16 +91,16 @@ function App() {
         </div>
         <div>
           <InfiniteScrollComponent
-            a="Hackathons"
-            b="Coding"
-            c="Contests"
-            d="Projects"
-            e="Development"
-            f="Lectures"
-            g="Nptel"
-            h="Interviews"
-            i="Tests"
-            j="Skills"
+             a="React"
+             b="Java"
+             c="Typescript"
+             d="Javascript"
+             e="Development"
+             f="Coding"
+             g="Nptel"
+             h="SDE Intern"
+             i="MERN"
+             j="Linux"
           />
         </div>
       </section>
@@ -115,38 +113,38 @@ function App() {
         </div>
         <div>
           <InfiniteScrollComponent
-            a="Hackathons"
-            b="Coding"
-            c="Contests"
-            d="Projects"
+            a="React"
+            b="Java"
+            c="Typescript"
+            d="Javascript"
             e="Development"
-            f="Lectures"
+            f="Coding"
             g="Nptel"
-            h="Interviews"
-            i="Tests"
-            j="Skills"
+            h="SDE Intern"
+            i="MERN"
+            j="Linux"
           />
         </div>
       </section>
 
       <section id="gallery" className="min-h-screen flex flex-col py-16">
-        <h2 className="text-4xl font-bold text-center text-white ">
-          Achievements & Activities
+        <h2 className="text-5xl font-extrabold text-white tracking-wide text-center  ">
+          Achievements & Activities 
         </h2>
         <div style={{ height: "600px", position: "relative" }}>
           <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
         </div>
         <InfiniteScrollComponent
-          a="Hackathons"
-          b="Coding"
-          c="Contests"
-          d="Projects"
-          e="Development"
-          f="Lectures"
-          g="Nptel"
-          h="Interviews"
-          i="Tests"
-          j="Skills"
+           a="React"
+           b="Java"
+           c="Typescript"
+           d="Javascript"
+           e="Development"
+           f="Coding"
+           g="Nptel"
+           h="SDE Intern"
+           i="MERN"
+           j="Linux"
         />
       </section>
 
@@ -158,16 +156,16 @@ function App() {
         </div>
         <div className="pt-10">
           <InfiniteScrollComponent
-            a="Hackathons"
-            b="Coding"
-            c="Contests"
-            d="Projects"
+            a="React"
+            b="Java"
+            c="Typescript"
+            d="Javascript"
             e="Development"
-            f="Lectures"
+            f="Coding"
             g="Nptel"
-            h="Interviews"
-            i="Tests"
-            j="Skills"
+            h="SDE Intern"
+            i="MERN"
+            j="Linux"
           />
         </div>
       </section>

@@ -469,6 +469,6 @@ export default function CircularGallery({
     }
   }, [items, bend, textColor, borderRadius, font])
   return (
-    <div className='w-full h-full overflow-hidden cursor-grab active:cursor-grabbing' ref={containerRef} />
+    <div className='w-full -mt-5 h-full overflow-hidden cursor-grab active:cursor-grabbing' ref={containerRef} />
   )
 }

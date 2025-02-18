@@ -31,7 +31,7 @@ const projects = [
 
 const ContentSection = ({ title, description, technologies, projectUrl, githubUrl }) => (
   <motion.div
-    className="flex-1 space-y-4 px-5"
+    className="flex-1 space-y-4 px-5 text-left pt-4 md:pt-10" 
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6 }}
@@ -40,12 +40,12 @@ const ContentSection = ({ title, description, technologies, projectUrl, githubUr
     <h3 className="text-2xl font-bold text-white">{title}</h3>
     <p className="text-gray-300">{description}</p>
     <p className="text-sm text-gray-400">{technologies}</p>
-    <div className="flex gap-4">
+    <div className="flex gap-4 items-start">
       <motion.a
         href={projectUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+        className="inline-flex gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -56,7 +56,7 @@ const ContentSection = ({ title, description, technologies, projectUrl, githubUr
         href={githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+        className="inline-flex gap-2 text-gray-400 hover:text-gray-300 transition-colors"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -66,6 +66,7 @@ const ContentSection = ({ title, description, technologies, projectUrl, githubUr
     </div>
   </motion.div>
 );
+
 
 ContentSection.propTypes = {
   title: PropTypes.string.isRequired,
@@ -111,9 +112,9 @@ LaptopSection.propTypes = {
 
 const Projects = () => {
   return (
-    <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+    <div className="relative z-10 max-w-7xl mx-auto px-4 py-10">
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center mb-16">
-        <motion.h2 className="text-5xl mb-6 font-pacifico text-white">My Project</motion.h2>
+        <motion.h2 className="text-5xl font-extrabold text-white tracking-wide">My Projects</motion.h2>
       </motion.div>
       <div className="flex flex-col gap-12 md:gap-16">
         {projects.map((project, index) => (

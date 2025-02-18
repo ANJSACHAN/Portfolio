@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Twitter } from "lucide-react";
-import InfiniteScrollComponent from "./InfiniteScrollComponent";
 const roles = [
   {
     title: "MERN Stack Developer",
@@ -119,7 +118,6 @@ const LandingPage = () => {
           {[
             { icon: Github, href: "https://github.com/ANJSACHAN" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/anjalisachan/" },
-            { icon: Twitter, href: "#" }
           ].map((social, i) => (
             <motion.a
               key={i}

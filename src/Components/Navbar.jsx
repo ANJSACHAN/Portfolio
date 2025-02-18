@@ -18,22 +18,29 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       setIsVisible(scrollPosition > 500);
-
+  
+      if (scrollPosition < 100) {
+        // Reset to home when at the top
+        setActiveSection("home");
+        return;
+      }
+  
       for (const section of sections) {
         const element = document.getElementById(section.id);
         if (element) {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 100 && rect.bottom >= 100) {
             setActiveSection(section.id);
-            break;
+            return; // Stop checking further sections
           }
         }
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);

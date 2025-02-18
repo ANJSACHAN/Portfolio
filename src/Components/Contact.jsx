@@ -47,7 +47,7 @@ const Contact = () => {
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center font-pacifico text-5xl mb-12 text-white"
+          className="text-center text-5xl font-extrabold text-white tracking-wide mb-12 "
         >
           {"Let's Connect"}
         </motion.h2>
