@@ -37,7 +37,7 @@ const ContentSection = ({ title, description, technologies, projectUrl, githubUr
     transition={{ duration: 0.6 }}
     viewport={{ once: true }}
   >
-    <h3 className="text-2xl font-bold text-white">{title}</h3>
+    <h3 className="text-2xl font-bold text-white font-playwrite mb-2 text-white group-hover:text-cyan-400 transition-colors">{title}</h3>
     <p className="text-gray-300">{description}</p>
     <p className="text-sm text-gray-400">{technologies}</p>
     <div className="flex gap-4 items-start">

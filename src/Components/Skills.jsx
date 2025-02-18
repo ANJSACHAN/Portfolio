@@ -116,12 +116,12 @@ function Skills() {
               <div className="p-3 rounded-full bg-gray-800/50 backdrop-blur-sm mb-4 group-hover:shadow-lg group-hover:shadow-cyan-500/20 transition-all duration-300">
                 {skill.icon}
               </div>
-              <h3 className="text-2xl font-playwrite mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-2xl font-bold text-white font-playwrite mb-2 text-center text-white group-hover:text-cyan-400 transition-colors">
                 {skill.category}
               </h3>
             </motion.div>
 
-            <p className="text-gray-300 text-lg text-center mb-6 font-satisfy">
+            <p className="text-md text-gray-400 text-center mb-6 ">
               {skill.description}
             </p>
 
@@ -130,7 +130,7 @@ function Skills() {
                 <motion.span
                   key={itemIndex}
                   whileHover={{ scale: 1.05 }}
-                  className="px-3 py-1 rounded-full text-lg font-satisfy bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
+                  className="px-3 py-1 rounded-full text-lg font-playwrite bg-gray-800/50 text-cyan-400 border border-cyan-500/20 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all duration-300"
                 >
                   {item}
                 </motion.span>

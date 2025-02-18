@@ -35,8 +35,10 @@ const Contact = () => {
     }
   }, [formSubmitted]);
 
+
+  
   return (
-    <div className="relative z-10 container mx-auto px-4 py-">
+    <div className="relative z-10 container mx-auto px-4 min-h-screen">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -69,7 +71,7 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <p className="text-center font-satisfy text-cyan-400 text-2xl py-16">
+              <p className="text-center font-playwrite text-gray-300 text-xl py-16">
                 {"Thank you for your message! I'll get back to you shortly!"}
               </p>
             </motion.div>
@@ -89,10 +91,11 @@ const Contact = () => {
                 >
                   <input
                     type="text"
+                    autoComplete="off" 
                     name="name"
                     required
                     placeholder="Name"
-                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none group-hover:text-cyan-400 transition-colors"
+                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none "
                   />
                 </motion.div>
 
@@ -102,11 +105,12 @@ const Contact = () => {
                 >
                   <input
                     type="email"
+                    autoComplete="off" 
                     name="email"
                     required
                     placeholder="Email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none group-hover:text-cyan-400 transition-colors"
+                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none "
                   />
                 </motion.div>
 
@@ -116,10 +120,11 @@ const Contact = () => {
                 >
                   <textarea
                     name="message"
+                    autoComplete="off" 
                     required
                     rows="4"
                     placeholder="Your Message"
-                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none group-hover:text-cyan-400 transition-colors"
+                    className="w-full bg-transparent text-gray-200 text-2xl font-satisfy p-2 focus:outline-none "
                   />
                 </motion.div>
               </div>
@@ -128,7 +133,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full py-4 px-6 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white rounded-lg font-pacifico text-lg tracking-wide transition-all duration-200 shadow-lg hover:shadow-cyan-500/25"
+                className="w-full py-4 px-6 bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-xl rounded-lg font-bold text-white font-playwrite mb-2 text-center text-white  transition-all duration-200 shadow-lg hover:shadow-cyan-500/25"
               >
                 Send Message
               </motion.button>
@@ -163,6 +168,7 @@ const Contact = () => {
           </motion.a>
         </div>
       </motion.div>
+      
     </div>
   );
 };
