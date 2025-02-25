@@ -5,21 +5,22 @@ import { Github, Linkedin, CodeSquare } from "lucide-react";
 const roles = [
   {
     title: "MERN Stack Developer",
-    desc: "Passionate about building scalable web applications using the MERN stack. Crafting efficient solutions that drive innovation."
+    desc: "Building scalable and efficient web applications using the MERN stack. Passionate about creating seamless user experiences and optimizing performance."
   },
   {
-    title: "Open Source Contributor",
-    desc: "Contributing to the developer community through open source projects. Building tools that make the web better for everyone."
+    title: "SDE Intern at Mediology",
+    desc: "Gaining hands-on experience in software development while contributing to impactful projects. Focused on writing clean, maintainable code and enhancing web solutions."
   },
   {
     title: "Tech Enthusiast",
-    desc: "Always exploring new technologies and staying current with the latest trends in web development and software architecture."
+    desc: "Constantly exploring emerging technologies, staying up-to-date with the latest trends, and experimenting with innovative web development practices."
   },
   {
     title: "SIH Finalist",
-    desc: "Recognized for innovative problem-solving in Smart India Hackathon. Creating impactful solutions for real-world challenges."
+    desc: "Recognized in the Smart India Hackathon for developing real-world solutions through innovation, teamwork, and problem-solving skills."
   }
 ];
+
 
 const TypewriterText = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
